@@ -7,12 +7,13 @@ const images = {
 class CopyCat extends React.Component {
     render() {
         return (
-            <div>
+            <div style={this.props.divStyles}>
                 <h1>Copy Cat</h1>
                 <img 
                     alt='cat'
                     src={this.props.copying ? images.copycat : images.quietcat}
                     onClick={this.props.toggleTape}
+                    style={this.props.imgStyles}
                 />
             </div>
         )

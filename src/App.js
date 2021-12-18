@@ -1,5 +1,6 @@
 import React, {Component, useState, useEffect} from 'react'
 import CopyCat from './CopyCat'
+import Styles from './styles'
 class CopyCatContainer extends React.Component {
     constructor(props) {
         super(props)
@@ -16,7 +17,7 @@ class CopyCatContainer extends React.Component {
     }
     
     render() {
-        return <CopyCat copying={this.state.copying} toggleTape={this.toggleTape}/>
+        return <CopyCat divStyles={Styles.divStyles} imgStyles={Styles.imgStyles} copying={this.state.copying} toggleTape={this.toggleTape}/>
     }
 }
 

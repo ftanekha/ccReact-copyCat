@@ -29,3 +29,22 @@ const imgStyles = {
     marginTop,
     width
 }
+
+const styles = {
+    fontFamily,
+    fontSize,
+    backgroundColor,
+    minHeight,
+    minWidth,
+    display,
+    flexDirection,
+    alignItems,
+    justifyContent,
+    color,
+    marginTop,
+    width,
+    divStyles,
+    imgStyles
+}
+
+export default  styles
