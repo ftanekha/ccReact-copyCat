@@ -2,15 +2,17 @@ const
     fontFamily = 'Comic Sans MS, Lucida Handwriting, cursive',
     fontSize = '5vh',
     backgroundColor = '#282c34',
-    minHeight = '100vh',
-    minWidth = 400,
+    minHeight = '70vh',
+    // minWidth = 400,
+    maxWidth = '60%',
     display = 'flex',
     flexDirection = 'column',
     alignItems = 'center',
     justifyContent = 'center',
     color = 'white',
     marginTop = '20px',
-    width = '50%'
+    width = '50%',
+    divClasses = 'bg-dark p-2 border border-2 border-rounded border-info'
 
 const divStyles = {
     fontFamily,
@@ -18,11 +20,12 @@ const divStyles = {
     color,
     backgroundColor,
     minHeight,
-    minWidth,
+    maxWidth,
     display,
     flexDirection,
     alignItems,
     justifyContent,
+    className: divClasses
 }
 
 const imgStyles = {
@@ -35,7 +38,7 @@ const styles = {
     fontSize,
     backgroundColor,
     minHeight,
-    minWidth,
+    maxWidth,
     display,
     flexDirection,
     alignItems,

@@ -8,9 +8,9 @@ const images = {
 class CopyCat extends React.Component {
     render() {
         return (
-            <div style={this.props.divStyles}>
-                <h1>Copy Cat {this.props.name}</h1>
-                <input type='text' value={this.props.input} onChange={this.props.onChange}/>
+            <div className='mx-auto my-5' style={this.props.divStyles}>
+                <h1>Copy Cat <span className='text-warning fw-bolder'>{this.props.name}</span></h1>
+                <input type='text' value={this.props.input} onChange={this.props.onChange} className='text-dark fw-bolder'/>
                 <img 
                     alt='cat'
                     src={this.props.copying ? images.copycat : images.quietcat}
